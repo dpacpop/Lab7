@@ -27,5 +27,17 @@ int main(void)
     cin>>rect2.breadth;
     cout<<"for the 1st rectangle:\narea = "<<rect1.area(rect1.length,rect1.breadth)<<"\nperimeter = "<<rect1.perimeter(rect1.length,rect1.breadth)<<endl;
     cout<<"for the 2nd rectangle:\narea = "<<rect2.area(rect2.length,rect2.breadth)<<"\nperimeter = "<<rect2.perimeter(rect2.length,rect2.breadth)<<endl;
+    if(rect1.area(rect1.length,rect1.breadth)>rect2.area(rect2.length,rect2.breadth))
+    cout<<"area of rectangle 1 > area of rectangle 2"<<endl;
+    else if(rect1.area(rect1.length,rect1.breadth)<rect2.area(rect2.length,rect2.breadth))
+    cout<<"area of rectangle 1 < area of rectangle 2"<<endl;
+    else if(rect1.area(rect1.length,rect1.breadth)==rect2.area(rect2.length,rect2.breadth))
+    cout<<"area of rectangle 1 = area of rectangle 2"<<endl;
+    if(rect1.perimeter(rect1.length,rect1.breadth)>rect2.perimeter(rect2.length,rect2.breadth))
+    cout<<"perimeter of rectangle 1 > perimeter of rectangle 2"<<endl;
+    else if(rect1.perimeter(rect1.length,rect1.breadth)<rect2.perimeter(rect2.length,rect2.breadth))
+    cout<<"perimeter of rectangle 1 < perimeter of rectangle 2"<<endl;
+    else if(rect1.perimeter(rect1.length,rect1.breadth)==rect2.perimeter(rect2.length,rect2.breadth))
+    cout<<"perimeter of rectangle 1 = perimeter of rectangle 2"<<endl;
     return 0;
 }
